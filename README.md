@@ -11,7 +11,11 @@ This is a simple web application that allows users to:
 - Cat facts are fetched from [MeowFacts API](https://meowfacts.herokuapp.com/)  
 - Cat photos are fetched from [The Cat API](https://api.thecatapi.com/v1/images/search)  
 - Axios is used to handle HTTP requests  
-- A loading spinner and error messages are displayed for better user experience  
+- Spinner and error messages are displayed for better user experience  
+
+## 🚀 Live Site
+
+[Click here to view the app](https://the-cat-api-ten.vercel.app/
 
 ---
 
