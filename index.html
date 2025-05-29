@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat API Fetch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-title">The Cats App</h1>
+      <form class="form">
+        <div class="form-container">
+          <label for="cat-facts" class="form-container-label"
+            >Number of Cats Facts (50 maximum)</label
+          >
+          <div class="form-controls">
+            <input
+              type="number"
+              id="cat-facts"
+              class="form-input"
+              placeholder="Number of Cat Facts (50 max)"
+            />
+            <button id="submit-facts-button" type="button">Submit</button>
+          </div>
+        </div>
+        <div class="form-container">
+          <label for="cat-photos" class="form-container-label"
+            >Number of Cats Photos (10 max)</label
+          >
+          <div class="form-controls">
+            <input
+              type="number"
+              id="cat-photos"
+              class="form-input"
+              placeholder="Number of Cat Photos (10 max)"
+            />
+            <button id="cat-photos-button" type="button">Submit</button>
+          </div>
+        </div>
+      </form>
+    </header>
+    <div class="results-container" id="results-container">
+       <div id="spinner" class="spinner hidden"></div>
+      <ol class="facts-list" id="facts-list"></ol>
+      <div class="img-container" id="img-container"></div>
+    </div>
+     <p id="error" class="error hidden">
+      An error occurred. Please try again later
+    </p>
+  </body>
+</html>
